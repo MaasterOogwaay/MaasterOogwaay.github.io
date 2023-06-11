@@ -53,7 +53,7 @@ app.get("/login", (req, res) => {
 
 // Signup page
 app.get("/signup", (req, res) => {
-  res.sendFile(__dirname + "/static/signup.html");
+  res.sendFile(__dirname + "/signup.html");
 });
 
 // Dashboard page. Only accessible to logged in users
@@ -93,4 +93,4 @@ app.post("/signup", function (req, res) {
  */
 const port = 3000;
 // const URL = "https://oogwaydev.me";
-//app.listen(port, () => console.log(`Server listening on port ${port}`));
+app.listen(port, () => console.log(`Server listening on port ${port}`));
