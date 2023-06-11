@@ -43,12 +43,12 @@ passport.deserializeUser(User.deserializeUser());
  */
 // Index page
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/static/index.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 // Login page
 app.get("/login", (req, res) => {
-  res.sendFile(__dirname + "/static/login.html");
+  res.sendFile(__dirname + "/login.html");
 });
 
 // Signup page
@@ -93,4 +93,4 @@ app.post("/signup", function (req, res) {
  */
 const port = 3000;
 // const URL = "https://oogwaydev.me";
-app.listen(port, () => console.log(`Server listening on port ${port}`));
+//app.listen(port, () => console.log(`Server listening on port ${port}`));
